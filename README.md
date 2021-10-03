@@ -1,6 +1,7 @@
 # SolidJS template
 
 [![CI/CD](https://github.com/pawelblaszczyk5/solidjs-template/actions/workflows/ci_cd.yml/badge.svg)](https://github.com/pawelblaszczyk5/solidjs-template/actions/workflows/ci_cd.yml) [![codecov](https://codecov.io/gh/pawelblaszczyk5/solidjs-template/branch/main/graph/badge.svg?token=8TIBBSZNL4)](https://codecov.io/gh/pawelblaszczyk5/solidjs-template)
+
 SolidJS boilerplate for building modern web applications.
 
 ## Framework
