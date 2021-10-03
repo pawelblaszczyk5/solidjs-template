@@ -42,5 +42,5 @@ jobs:
       - name: Lint code
         run: npm run lint:ci
 
-      - name: Check code style with prettier
+      - name: Check code style
         run: npm run format:ci
