@@ -6,8 +6,8 @@ module.exports = {
   collectCoverageFrom: ['<rootDir>/src/**/*.ts', '<rootDir>/src/**/*.tsx'],
   coverageProvider: 'v8',
   moduleNameMapper: {
-    '@shared/(.*)': '<rootDir>/src/shared/$1',
     '@assets/(.*)': '<rootDir>/src/assets/$1',
+    '@lib/(.*)': '<rootDir>/src/lib/$1',
     '@X/(.*)': '<rootDir>/src/features/X/$1',
   },
 };
