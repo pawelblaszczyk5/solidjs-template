@@ -22,4 +22,4 @@ Use ESLint and Prettier to enforce code style across your app. Make code more re
 
 ## CI/CD
 
-It utilizes GitHub Actions for continuously making sure that your app is in the best possible state. Combine all of the above always when you update your repository. Moreover, automatically upload tests coverage to [Codecov](https://about.codecov.io/)- a platform that lets you track testing in your app. All actions are pinned to commit SHA for increased security.
+It utilizes GitHub Actions for continuously making sure that your app is in the best possible state. Combine all of the above always when you update your repository. Moreover, automatically upload tests coverage to [Codecov](https://about.codecov.io/) - a platform that lets you track testing in your app. All actions are pinned to commit SHA for increased security.
