@@ -1,7 +1,7 @@
 {
   "name": "solidjs-template",
-  "version": "0.0.0",
-  "description": "",
+  "version": "1.0.0",
+  "description": "Template for building apps with SolidJS",
   "scripts": {
     "start": "vite",
     "dev": "vite",
