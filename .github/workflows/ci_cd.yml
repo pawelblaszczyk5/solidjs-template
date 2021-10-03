@@ -1,0 +1,46 @@
+# This workflow will install dependencies, build application, run tests and upload their coverage to codecov, check if code is properly linted and formatted
+
+name: CI/CD
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  ci_cd:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Use Node.js 16
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+          cache: 'npm'
+
+      - name: Disable prepare script
+        run: npm set-script prepare ""
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build
+        run: npm run build
+
+      - name: Run tests with coverage
+        run: npm test -- --coverage
+
+      - name: Upload code coverage to codecov
+        uses: codecov/codecov-action@v2
+        with:
+          files: coverage/lcov.info
+
+      - name: Lint code
+        run: npm run lint:ci
+
+      - name: Check code style with prettier
+        run: npm run format:ci
