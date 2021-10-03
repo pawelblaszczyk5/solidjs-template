@@ -6,4 +6,11 @@ export default defineConfig({
   build: {
     target: "es2017",
   },
+  resolve: {
+    alias: {
+      "@assets": "/src/assets",
+      "@lib": "/src/lib",
+      "@X": "/src/features/X",
+    },
+  },
 });
