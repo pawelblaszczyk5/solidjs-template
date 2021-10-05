@@ -40,6 +40,7 @@
     "vite-plugin-solid": "^2.1.0"
   },
   "dependencies": {
+    "modern-normalize": "^1.1.0",
     "solid-js": "^1.1.5"
   }
 }
